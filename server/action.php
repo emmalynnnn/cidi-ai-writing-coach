@@ -85,8 +85,8 @@
             $assign = $_GET['assign'];
 
             //obtain response
-            //$result = getFeedback($section, $input, $feedbackType, $assign);
-            $result = '\n\n{"feedback": ["Did", "this", "work?", "'.$feedbackType.'"]}';
+            $result = getFeedback($section, $input, $feedbackType, $assign);
+            //$result = '\n\n{"feedback": ["Test", "test", "test"]}';
 
             //send response back to client
             print json_encode($result);
